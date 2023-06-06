@@ -7,6 +7,9 @@ This is project for Simulation group laboratory assignment № 14. In this proje
 
 2. Танумихарджа Рафаэл 932003 (GitHub Profile)[https://github.com/rafaelmt35]
 
+## External API for RV generator
+Since there are no compatible libraries that can generate random variable with Poisson and Exponential distribution in Swift. We are creating an API that will return a random variable for specific distribution. So to be able to compile and run this iPad app you need to also run the API on your local machine. [GitHub repository for Random Variable Generator API](https://github.com/Steven2110/DistributionGenerator) follow all the instructions mentioned in the `README.md` file and then compile and run this project.
+
 ## Demo
 ![Demo](https://github.com/Steven2110/BankSimulation/blob/main/Images/Demo.gif)
 
