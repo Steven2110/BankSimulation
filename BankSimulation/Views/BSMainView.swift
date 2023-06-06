@@ -10,6 +10,7 @@ import Charts
 
 struct BSMainView: View {
     
+    @StateObject private var vm: BSViewModel = BSViewModel()
     @State private var N: String = ""
     @State private var serviceParams: String = ""
     @State private var arrivalParams: String = ""
