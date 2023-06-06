@@ -20,19 +20,26 @@ struct BSMainView: View {
 
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 10) {
-                Group {
-                    TextField("Number of operators", text: $N).inputTextField()
-                    TextField("Arrival parameters", text: $arrivalParams).inputTextField()
-                    TextField("Service parameters", text: $serviceParams).inputTextField()
-                }.keyboardType(.numberPad)
-                Button {
-                    vm.setValue(N: Int(N)!, lambdaParams: Int(arrivalParams)!, miuParams: Double(serviceParams)!)
-                    timer = Timer.scheduledTimer(withTimeInterval: timestep, repeats: true) { _ in
-                        vm.start()
-                    }
-                } label: {
-                    startButton
+            ScrollView {
+                VStack(alignment: .leading, spacing: 15) {
+                    Group {
+                        TextField("Number of operators", text: $N).inputTextField()
+                        TextField("Arrival parameters", text: $arrivalParams).inputTextField()
+                        TextField("Service parameters", text: $serviceParams).inputTextField()
+                    }.keyboardType(.numberPad)
+                    Button {
+                        vm.setValue(N: Int(N)!, lambdaParams: Int(arrivalParams)!, miuParams: Double(serviceParams)!)
+                        timer = Timer.scheduledTimer(withTimeInterval: timestep, repeats: true) { _ in
+                            vm.start()
+                        }
+                    } label: {
+                        startButton
+                    }.padding(.bottom)
+                    Text("Information")
+                        .bold()
+                        .font(.title)
+                    Divider()
+                    InformationView(totalPerson: vm.getTotalPeople(), queue: vm.y, busyOperators: vm.x, time: vm.t)
                 }
             }
             .padding()

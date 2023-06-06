@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B04572502A2FA310004E2C99 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = B045724F2A2FA310004E2C99 /* Result.swift */; };
+		B04572522A2FA4AE004E2C99 /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04572512A2FA4AE004E2C99 /* InformationView.swift */; };
 		B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0882A2F9BE700C93EC9 /* BankSimulationApp.swift */; };
 		B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */; };
 		B068A08D2A2F9BE800C93EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068A08C2A2F9BE800C93EC9 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B045724F2A2FA310004E2C99 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		B04572512A2FA4AE004E2C99 /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		B068A0852A2F9BE700C93EC9 /* BankSimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankSimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B068A0882A2F9BE700C93EC9 /* BankSimulationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSimulationApp.swift; sourceTree = "<group>"; };
 		B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSMainView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */,
+				B04572512A2FA4AE004E2C99 /* InformationView.swift */,
 				B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */,
 			);
 			path = Views;
@@ -201,6 +204,7 @@
 				B068A0A72A2FA1FF00C93EC9 /* NetworkManager.swift in Sources */,
 				B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */,
 				B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */,
+				B04572522A2FA4AE004E2C99 /* InformationView.swift in Sources */,
 				B04572502A2FA310004E2C99 /* Result.swift in Sources */,
 				B068A0A32A2F9F5400C93EC9 /* BSViewModel.swift in Sources */,
 			);
