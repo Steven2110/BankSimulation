@@ -13,6 +13,8 @@
 		B068A0902A2F9BE800C93EC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068A08F2A2F9BE800C93EC9 /* Preview Assets.xcassets */; };
 		B068A0972A2F9C0A00C93EC9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B068A0962A2F9C0A00C93EC9 /* .gitignore */; };
 		B068A0992A2F9C0F00C93EC9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B068A0982A2F9C0F00C93EC9 /* README.md */; };
+		B068A09F2A2F9D9600C93EC9 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */; };
+		B068A0A12A2F9DAC00C93EC9 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0A02A2F9DAC00C93EC9 /* ViewExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B068A08F2A2F9BE800C93EC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B068A0962A2F9C0A00C93EC9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		B068A0982A2F9C0F00C93EC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		B068A0A02A2F9DAC00C93EC9 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */,
+				B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		B068A09D2A2F9CCF00C93EC9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B068A0A02A2F9DAC00C93EC9 /* ViewExt.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -177,6 +183,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B068A0A12A2F9DAC00C93EC9 /* ViewExt.swift in Sources */,
+				B068A09F2A2F9D9600C93EC9 /* CustomModifiers.swift in Sources */,
 				B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */,
 				B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */,
 			);
