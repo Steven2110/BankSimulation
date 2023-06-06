@@ -50,11 +50,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B04572532A2FA81F004E2C99 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B068A07C2A2F9BE700C93EC9 = {
 			isa = PBXGroup;
 			children = (
 				B068A0982A2F9C0F00C93EC9 /* README.md */,
 				B068A0962A2F9C0A00C93EC9 /* .gitignore */,
+				B04572532A2FA81F004E2C99 /* Images */,
 				B068A0872A2F9BE700C93EC9 /* BankSimulation */,
 				B068A0862A2F9BE700C93EC9 /* Products */,
 			);
