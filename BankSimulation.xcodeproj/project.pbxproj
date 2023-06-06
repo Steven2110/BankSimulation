@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0882A2F9BE700C93EC9 /* BankSimulationApp.swift */; };
-		B068A08B2A2F9BE700C93EC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A08A2A2F9BE700C93EC9 /* ContentView.swift */; };
+		B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */; };
 		B068A08D2A2F9BE800C93EC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068A08C2A2F9BE800C93EC9 /* Assets.xcassets */; };
 		B068A0902A2F9BE800C93EC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068A08F2A2F9BE800C93EC9 /* Preview Assets.xcassets */; };
 		B068A0972A2F9C0A00C93EC9 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B068A0962A2F9C0A00C93EC9 /* .gitignore */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		B068A0852A2F9BE700C93EC9 /* BankSimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankSimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B068A0882A2F9BE700C93EC9 /* BankSimulationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankSimulationApp.swift; sourceTree = "<group>"; };
-		B068A08A2A2F9BE700C93EC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSMainView.swift; sourceTree = "<group>"; };
 		B068A08C2A2F9BE800C93EC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B068A08F2A2F9BE800C93EC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B068A0962A2F9C0A00C93EC9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -58,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				B068A0882A2F9BE700C93EC9 /* BankSimulationApp.swift */,
-				B068A08A2A2F9BE700C93EC9 /* ContentView.swift */,
+				B068A09D2A2F9CCF00C93EC9 /* Utilities */,
+				B068A09C2A2F9CCD00C93EC9 /* Models */,
+				B068A09B2A2F9CCA00C93EC9 /* ViewModels */,
+				B068A09A2A2F9CC600C93EC9 /* Views */,
 				B068A08C2A2F9BE800C93EC9 /* Assets.xcassets */,
 				B068A08E2A2F9BE800C93EC9 /* Preview Content */,
 			);
@@ -71,6 +74,35 @@
 				B068A08F2A2F9BE800C93EC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B068A09A2A2F9CC600C93EC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B068A08A2A2F9BE700C93EC9 /* BSMainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B068A09B2A2F9CCA00C93EC9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B068A09C2A2F9CCD00C93EC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B068A09D2A2F9CCF00C93EC9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B068A08B2A2F9BE700C93EC9 /* ContentView.swift in Sources */,
+				B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */,
 				B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +313,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,8 +345,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
