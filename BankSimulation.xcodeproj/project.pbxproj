@@ -15,6 +15,8 @@
 		B068A0992A2F9C0F00C93EC9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B068A0982A2F9C0F00C93EC9 /* README.md */; };
 		B068A09F2A2F9D9600C93EC9 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */; };
 		B068A0A12A2F9DAC00C93EC9 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0A02A2F9DAC00C93EC9 /* ViewExt.swift */; };
+		B068A0A32A2F9F5400C93EC9 /* BSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0A22A2F9F5400C93EC9 /* BSViewModel.swift */; };
+		B068A0A52A2F9F5C00C93EC9 /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068A0A42A2F9F5C00C93EC9 /* BankModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		B068A0982A2F9C0F00C93EC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B068A09E2A2F9D9600C93EC9 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
 		B068A0A02A2F9DAC00C93EC9 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		B068A0A22A2F9F5400C93EC9 /* BSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSViewModel.swift; sourceTree = "<group>"; };
+		B068A0A42A2F9F5C00C93EC9 /* BankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 		B068A09B2A2F9CCA00C93EC9 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B068A0A22A2F9F5400C93EC9 /* BSViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 		B068A09C2A2F9CCD00C93EC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B068A0A42A2F9F5C00C93EC9 /* BankModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,9 +190,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B068A0A12A2F9DAC00C93EC9 /* ViewExt.swift in Sources */,
+				B068A0A52A2F9F5C00C93EC9 /* BankModel.swift in Sources */,
 				B068A09F2A2F9D9600C93EC9 /* CustomModifiers.swift in Sources */,
 				B068A08B2A2F9BE700C93EC9 /* BSMainView.swift in Sources */,
 				B068A0892A2F9BE700C93EC9 /* BankSimulationApp.swift in Sources */,
+				B068A0A32A2F9F5400C93EC9 /* BSViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
