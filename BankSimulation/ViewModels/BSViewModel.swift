@@ -9,7 +9,7 @@ import Foundation
 
 final class BSViewModel: ObservableObject {
 
-    @Published var bank: [Bank] = [Bank]()
+    @Published var bank: [BankModel] = [BankModel]()
 
     private var N = 10
     private var x = 0 // Busy operator
@@ -90,7 +90,7 @@ final class BSViewModel: ObservableObject {
         print("t: \(t)")
 
 
-        let currentState = Bank(time: t, queue: y, busyOperator: x)
+        let currentState = BankModel(time: t, queue: y, busyOperator: x)
         bank.append(currentState)
         // queue.append(y)
         // busyOperators.append(x)

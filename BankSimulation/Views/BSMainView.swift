@@ -14,6 +14,9 @@ struct BSMainView: View {
     @State private var N: String = ""
     @State private var serviceParams: String = ""
     @State private var arrivalParams: String = ""
+    
+    @State private var timer: Timer? = nil
+    private let timestep: Double = 1.0
 
     var body: some View {
         NavigationView {
@@ -24,7 +27,10 @@ struct BSMainView: View {
                     TextField("Service parameters", text: $serviceParams).inputTextField()
                 }.keyboardType(.numberPad)
                 Button {
-                    
+                    vm.setValue(N: Int(N)!, lambdaParams: Int(arrivalParams)!, miuParams: Double(serviceParams)!)
+                    timer = Timer.scheduledTimer(withTimeInterval: timestep, repeats: true) { _ in
+                        vm.start()
+                    }
                 } label: {
                     startButton
                 }
@@ -35,8 +41,15 @@ struct BSMainView: View {
                 Text("Queueing system changes")
                     .bold()
                     .font(.largeTitle)
-                Chart{
-                    
+                Chart(vm.bank) { state in
+                    PointMark(x: .value("Time", state.time), y: .value("Number", state.queue))
+                        .foregroundStyle(by: .value("Queue", "Queue"))
+                    LineMark(x: .value("Time", state.time), y: .value("Number", state.queue))
+                        .foregroundStyle(by: .value("Queue", "Queue"))
+                    PointMark(x: .value("Time", state.time), y: .value("Number", state.busyOperator))
+                        .foregroundStyle(by: .value("Busy Operator", "Busy Operator"))
+                    LineMark(x: .value("Time", state.time), y: .value("Number", state.busyOperator))
+                        .foregroundStyle(by: .value("Busy Operator", "Busy Operator"))
                 }.padding()
             }
         }
